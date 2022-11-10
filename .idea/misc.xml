@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/jdsot/AndroidStudioProjects/TrainTrack/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/jdsot/AndroidStudioProjects/TrainTrack/app/src/main/res/layout/fragment_blank.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/jdsot/AndroidStudioProjects/TrainTrack/app/src/main/res/layout/fragment_login.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jdsot/AndroidStudioProjects/TrainTrack/app/src/main/res/layout/fragment_caminata.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jdsot/AndroidStudioProjects/TrainTrack/app/src/main/res/layout/fragment_datos.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jdsot/AndroidStudioProjects/TrainTrack/app/src/main/res/layout/fragment_editar_datos.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jdsot/AndroidStudioProjects/TrainTrack/app/src/main/res/layout/fragment_inicio.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jdsot/AndroidStudioProjects/TrainTrack/app/src/main/res/layout/fragment_login.xml" value="0.152" />
       </map>
     </option>
   </component>

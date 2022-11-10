@@ -11,21 +11,67 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_login_to_datos"
-            app:destination="@id/datos" />
-    </fragment>
-    <fragment
-        android:id="@+id/datos"
-        android:name="com.example.traintrack.datos"
-        android:label="fragment_datos"
-        tools:layout="@layout/fragment_datos" >
+            android:id="@+id/action_login_to_registro"
+            app:destination="@id/registro" />
         <action
-            android:id="@+id/action_datos_to_editarDatos"
-            app:destination="@id/editarDatos" />
+            android:id="@+id/action_login_to_menu2"
+            app:destination="@id/menu" />
     </fragment>
     <fragment
-        android:id="@+id/editarDatos"
-        android:name="com.example.traintrack.editarDatos"
-        android:label="fragment_editar_datos"
-        tools:layout="@layout/fragment_editar_datos" />
+        android:id="@+id/inicio"
+        android:name="com.example.traintrack.inicio"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicio_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/registro"
+        android:name="com.example.traintrack.registro"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" >
+        <action
+            android:id="@+id/action_registro_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.example.traintrack.menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menu_to_progreso"
+            app:destination="@id/progreso" />
+        <action
+            android:id="@+id/action_menu_to_ejercicios"
+            app:destination="@id/ejercicios" />
+    </fragment>
+    <fragment
+        android:id="@+id/progreso"
+        android:name="com.example.traintrack.Progreso"
+        android:label="fragment_progreso"
+        tools:layout="@layout/fragment_progreso" />
+    <fragment
+        android:id="@+id/ejercicios"
+        android:name="com.example.traintrack.ejercicios"
+        android:label="fragment_ejercicios"
+        tools:layout="@layout/fragment_ejercicios" >
+        <action
+            android:id="@+id/action_ejercicios_to_estiramientos"
+            app:destination="@id/estiramientos" />
+        <action
+            android:id="@+id/action_ejercicios_to_caminata"
+            app:destination="@id/caminata" />
+    </fragment>
+    <fragment
+        android:id="@+id/caminata"
+        android:name="com.example.traintrack.caminata"
+        android:label="fragment_caminata"
+        tools:layout="@layout/fragment_caminata" />
+    <fragment
+        android:id="@+id/estiramientos"
+        android:name="com.example.traintrack.estiramientos"
+        android:label="fragment_estiramientos"
+        tools:layout="@layout/fragment_estiramientos" />
 </navigation>
