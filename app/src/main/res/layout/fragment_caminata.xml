@@ -1,14 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".caminata">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        tools:context=".caminata">
 
-</FrameLayout>
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/barraDeProgreso"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:cpb_background_progressbar_color="#f2f2f2"
+            app:cpb_background_progressbar_width="20sp"
+            app:cpb_progress_direction="to_left"
+            app:cpb_progressbar_color="@color/purple_700"
+            app:cpb_progress_max="10000"
+            app:cpb_progressbar_width="15dp"
+            app:cpb_round_border="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constrainthorizontalBias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvConteoPasos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/barraDeProgreso"
+            app:layout_constraintEnd_toEndOf="@+id/barraDeProgreso"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="@+id/barraDeProgreso"
+            app:layout_constraintTop_toTopOf="@+id/barraDeProgreso"
+            app:layout_constraintVertical_bias="0.496"
+            />
+        <TextView
+            android:id="@+id/tvConteoTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="/10000"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/barraDeProgreso"
+            app:layout_constraintStart_toStartOf="@+id/barraDeProgreso"
+            app:layout_constraintTop_toBottomOf="@+id/tvConteoPasos"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tvConteoPasos,tvConteoTotal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
