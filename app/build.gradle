@@ -8,8 +8,12 @@ plugins {
 android {
     compileSdk 32
 
-    buildFeatures {
-        viewBinding true
+    viewBinding {
+        enabled = true
+    }
+
+    dataBinding {
+        enabled = true
     }
 
     defaultConfig {
@@ -39,8 +43,6 @@ android {
 
 dependencies {
     implementation"org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation("androidx.navigation:navigation-fragment:2.5.2")
-    implementation("androidx.navigation:navigation-ui:2.5.2")
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.2")
     implementation("androidx.navigation:navigation-ui-ktx:2.5.2")
     implementation("androidx.navigation:navigation-dynamic-features-fragment:2.5.2")
@@ -55,4 +57,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'com.karumi:dexter:6.2.2'
     implementation 'com.mikhaellopez:circularprogressbar:3.0.3'
+    implementation 'com.android.databinding:viewbinding:7.2.2'
 }
