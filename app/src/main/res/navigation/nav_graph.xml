@@ -18,15 +18,6 @@
             app:destination="@id/menu" />
     </fragment>
     <fragment
-        android:id="@+id/inicio"
-        android:name="com.example.traintrack.inicio"
-        android:label="fragment_inicio"
-        tools:layout="@layout/fragment_inicio" >
-        <action
-            android:id="@+id/action_inicio_to_login"
-            app:destination="@id/login" />
-    </fragment>
-    <fragment
         android:id="@+id/registro"
         android:name="com.example.traintrack.registro"
         android:label="fragment_registro"

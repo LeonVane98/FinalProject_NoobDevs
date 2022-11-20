@@ -17,7 +17,7 @@ import com.example.traintrack.databinding.FragmentCaminataBinding
 import com.example.traintrack.servicio.MiServicio
 import com.example.traintrack.util.Constante
 
-// TODO: Rename parameter arguments, choose names that match
+
 
 class Caminata : Fragment(), SensorEventListener {
 

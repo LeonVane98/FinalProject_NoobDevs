@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/imagen_menu"
-    tools:context=".menu" />
+    tools:context=".menu">
+
+    <Button
+        android:id="@+id/btn_ejercicios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ejercicios"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="200dp"/>
+
+    <Button
+        android:id="@+id/btn_progreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progreso"
+        app:layout_constraintTop_toBottomOf="@id/btn_ejercicios"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="100dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
