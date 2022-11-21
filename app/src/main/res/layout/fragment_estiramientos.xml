@@ -26,31 +26,34 @@
         android:id="@+id/btn_estiramientodeBicep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="300dp"
         android:backgroundTint="#1BDA2C"
         android:text="Estiramiento de Biceps"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="100dp"/>
 
     <Button
         android:id="@+id/btn_estiramientoAgachado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
         android:backgroundTint="#1BDA2C"
         android:text="Estiramientos de Cuello"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_estiramientodeBicep" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_estiramientodeBicep"
+        android:layout_marginLeft="100dp"/>
 
     <Button
         android:id="@+id/btn_estiramientoCadera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
         android:backgroundTint="#1BDA2C"
         android:text="Estiramientos de Cadera"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_estiramientoAgachado" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_Estiramiento"
+        android:layout_marginTop="135dp"
+        android:layout_marginLeft="35dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
