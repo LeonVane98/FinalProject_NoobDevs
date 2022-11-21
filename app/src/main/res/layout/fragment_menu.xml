@@ -2,29 +2,69 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/frameLayout4"
+    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/imagen_menu"
-    tools:context=".menu">
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/tv_Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Menu"
+        android:textColor="#000000"
+        android:textSize="55sp"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_ejercicios"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btn_Ejercicios"
+        android:layout_width="163dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#00B9D2"
         android:text="Ejercicios"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintHorizontal_bias="0.974"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="200dp"/>
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="259dp" />
 
     <Button
-        android:id="@+id/btn_progreso"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Progreso"
-        app:layout_constraintTop_toBottomOf="@id/btn_ejercicios"
-        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/btn_Estiramientos"
+        android:layout_width="163dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#00B9D2"
+        android:text="Estiramientos"
+        android:textAlignment="center"
+        app:layout_constraintHorizontal_bias="0.975"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="100dp"/>
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="357dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_Progreso"
+        android:layout_width="170dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:backgroundTint="#00B9D2"
+        android:text="Progreso"
+        android:textAlignment="center"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="439dp" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

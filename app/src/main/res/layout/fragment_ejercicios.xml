@@ -21,21 +21,21 @@
 
     <Button
         android:id="@+id/btn_opCaminata"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="270dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#02F6E9"
         android:text="Caminata"
         app:layout_constraintTop_toBottomOf="@id/tv_menuEjer"
-        android:layout_marginTop="100dp"
-        android:layout_marginRight="70dp"
-        android:layout_marginLeft="70dp"/>
+        tools:layout_editor_absoluteX="73dp" />
 
     <Button
         android:id="@+id/btn_opEstiramientos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="270dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#02F6E9"
         android:text="Estiramientos"
         app:layout_constraintTop_toBottomOf="@id/btn_opCaminata"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="70dp"
-        android:layout_marginLeft="70dp"/>
+        tools:layout_editor_absoluteX="70dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
