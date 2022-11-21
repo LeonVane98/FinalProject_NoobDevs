@@ -57,7 +57,7 @@
     </fragment>
     <fragment
         android:id="@+id/caminata"
-        android:name="com.example.traintrack.caminata"
+        android:name="com.example.traintrack.Caminata"
         android:label="fragment_caminata"
         tools:layout="@layout/fragment_caminata" />
     <fragment

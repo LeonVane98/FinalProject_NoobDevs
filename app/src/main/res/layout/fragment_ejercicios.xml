@@ -27,7 +27,9 @@
         android:backgroundTint="#02F6E9"
         android:text="Caminata"
         app:layout_constraintTop_toBottomOf="@id/tv_menuEjer"
-        tools:layout_editor_absoluteX="73dp" />
+        tools:layout_editor_absoluteX="73dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
         android:id="@+id/btn_opEstiramientos"
@@ -37,5 +39,7 @@
         android:backgroundTint="#02F6E9"
         android:text="Estiramientos"
         app:layout_constraintTop_toBottomOf="@id/btn_opCaminata"
-        tools:layout_editor_absoluteX="70dp" />
+        tools:layout_editor_absoluteX="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
