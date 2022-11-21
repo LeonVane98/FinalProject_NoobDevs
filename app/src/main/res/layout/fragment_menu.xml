@@ -24,6 +24,7 @@
 
     <Button
         android:id="@+id/btn_Ejercicios"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Estiramientos"
         android:layout_width="163dp"
         android:layout_height="56dp"
         android:layout_marginLeft="20dp"
@@ -59,6 +60,7 @@
         android:layout_marginRight="19dp"
         android:backgroundTint="#00B9D2"
         android:text="Progreso"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Estiramientos"
         android:textAlignment="center"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
