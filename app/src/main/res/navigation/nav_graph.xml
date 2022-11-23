@@ -64,5 +64,66 @@
         android:id="@+id/estiramientos"
         android:name="com.example.traintrack.estiramientos"
         android:label="fragment_estiramientos"
-        tools:layout="@layout/fragment_estiramientos" />
+        tools:layout="@layout/fragment_estiramientos" >
+        <action
+            android:id="@+id/action_estiramientos_to_estCadera1"
+            app:destination="@id/estCadera1" />
+        <action
+            android:id="@+id/action_estiramientos_to_estBicep1"
+            app:destination="@id/estBicep1" />
+        <action
+            android:id="@+id/action_estiramientos_to_estCuello1"
+            app:destination="@id/estCuello1" />
+    </fragment>
+    <fragment
+        android:id="@+id/estCadera1"
+        android:name="com.example.traintrack.EstCadera1"
+        android:label="fragment_est_cadera1"
+        tools:layout="@layout/fragment_est_cadera1" >
+        <action
+            android:id="@+id/action_estCadera1_to_estCadera2"
+            app:destination="@id/estCadera2" />
+    </fragment>
+    <fragment
+        android:id="@+id/estCadera2"
+        android:name="com.example.traintrack.EstCadera2"
+        android:label="fragment_est_cadera2"
+        tools:layout="@layout/fragment_est_cadera2" />
+    <fragment
+        android:id="@+id/estBicep1"
+        android:name="com.example.traintrack.EstBicep1"
+        android:label="fragment_est_bicep1"
+        tools:layout="@layout/fragment_est_bicep1" >
+        <action
+            android:id="@+id/action_estBicep1_to_estBicep2"
+            app:destination="@id/estBicep2" />
+    </fragment>
+    <fragment
+        android:id="@+id/estBicep2"
+        android:name="com.example.traintrack.EstBicep2"
+        android:label="fragment_est_bicep2"
+        tools:layout="@layout/fragment_est_bicep2" >
+        <action
+            android:id="@+id/action_estBicep2_to_estBicep3"
+            app:destination="@id/estBicep3" />
+    </fragment>
+    <fragment
+        android:id="@+id/estBicep3"
+        android:name="com.example.traintrack.EstBicep3"
+        android:label="fragment_est_bicep3"
+        tools:layout="@layout/fragment_est_bicep3" />
+    <fragment
+        android:id="@+id/estCuello1"
+        android:name="com.example.traintrack.EstCuello1"
+        android:label="fragment_est_cuello1"
+        tools:layout="@layout/fragment_est_cuello1" >
+        <action
+            android:id="@+id/action_estCuello1_to_estCuello2"
+            app:destination="@id/estCuello2" />
+    </fragment>
+    <fragment
+        android:id="@+id/estCuello2"
+        android:name="com.example.traintrack.EstCuello2"
+        android:label="fragment_est_cuello2"
+        tools:layout="@layout/fragment_est_cuello2" />
 </navigation>
