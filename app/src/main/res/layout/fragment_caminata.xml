@@ -15,8 +15,8 @@
 
         <com.mikhaellopez.circularprogressbar.CircularProgressBar
             android:id="@+id/barraDeProgreso"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             app:cpb_background_progressbar_color="#f2f2f2"
             app:cpb_background_progressbar_width="20sp"
             app:cpb_progress_direction="to_left"
@@ -43,17 +43,29 @@
             app:layout_constraintTop_toTopOf="@+id/barraDeProgreso"
             app:layout_constraintVertical_bias="0.496"
             />
-        <TextView
+        <EditText
             android:id="@+id/tvConteoTotal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="/10000"
+            android:hint="10000"
             android:textColor="@color/black"
-            android:textSize="14sp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="@+id/barraDeProgreso"
             app:layout_constraintStart_toStartOf="@+id/barraDeProgreso"
             app:layout_constraintTop_toBottomOf="@+id/tvConteoPasos"/>
+
+        <Button
+            android:id="@+id/btnMeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#205F65"
+            android:text="Meta"
+            app:layout_constraintEnd_toEndOf="@id/barraDeProgreso"
+            app:layout_constraintStart_toStartOf="@id/barraDeProgreso"
+            app:layout_constraintTop_toBottomOf="@id/tvConteoTotal" />
+
+
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"

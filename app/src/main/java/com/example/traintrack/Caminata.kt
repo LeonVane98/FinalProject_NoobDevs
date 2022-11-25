@@ -16,7 +16,7 @@ import com.example.traintrack.complementos.CANT_PASOS
 import com.example.traintrack.databinding.FragmentCaminataBinding
 import com.example.traintrack.servicio.MiServicio
 import com.example.traintrack.util.Constante
-
+import kotlinx.android.synthetic.main.fragment_caminata.*
 
 
 class Caminata : Fragment(), SensorEventListener {
@@ -60,6 +60,7 @@ class Caminata : Fragment(), SensorEventListener {
         }
         loadData()
         resetSteps()
+        setMeta()
         super.onViewCreated(view, savedInstanceState)
     }
 
@@ -72,6 +73,12 @@ class Caminata : Fragment(), SensorEventListener {
             }
             saveDate()
             true
+        }
+    }
+
+    private fun setMeta(){
+        fBinding.btnMeta.setOnClickListener {
+            fBinding.barraDeProgreso.progressMax = tvConteoTotal.text.toString().toFloat()
         }
     }
 
