@@ -32,9 +32,18 @@ class Caminata : Fragment(), SensorEventListener {
     override fun onResume() {
         super.onResume()
         running = true
+
         val stepSensor = sensorManager?.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
 
-        sensorManager?.registerListener(this, stepSensor, SensorManager.SENSOR_DELAY_UI)
+        if (stepSensor == null) {
+            Toast.makeText(
+                this.activity,
+                "No se ha detectado ningun sensor en este dispositivo",
+                Toast.LENGTH_SHORT
+            ).show()
+        } else {
+            sensorManager?.registerListener(this, stepSensor, SensorManager.SENSOR_DELAY_UI)
+        }
     }
 
     override fun onStop() {
