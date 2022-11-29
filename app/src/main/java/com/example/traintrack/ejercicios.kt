@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import com.example.traintrack.databinding.FragmentEjerciciosBinding
-import com.example.traintrack.databinding.FragmentLoginBinding
+
 
 class ejercicios : Fragment() {
     private lateinit var fbinding: FragmentEjerciciosBinding
@@ -21,11 +21,11 @@ class ejercicios : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         fbinding = FragmentEjerciciosBinding.inflate(layoutInflater)
-        navLogin()
+        navEjer()
         return fbinding.root
     }
 
-    private fun navLogin(){
+    private fun navEjer(){
         fbinding.btnOpCaminata.setOnClickListener {
             Navigation.findNavController(fbinding.root).navigate(R.id.action_ejercicios_to_caminata)
         }
