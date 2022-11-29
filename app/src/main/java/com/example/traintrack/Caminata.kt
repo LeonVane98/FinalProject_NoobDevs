@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.example.traintrack.complementos.CANT_PASOS
 import com.example.traintrack.databinding.FragmentCaminataBinding
@@ -77,8 +78,14 @@ class Caminata : Fragment(), SensorEventListener {
     }
 
     private fun setMeta(){
-        fBinding.btnMeta.setOnClickListener {
-            fBinding.barraDeProgreso.progressMax = tvConteoTotal.text.toString().toFloat()
+
+        if(tvConteoTotal.text.isNotEmpty()){
+            fBinding.btnMeta.setOnClickListener {
+                fBinding.barraDeProgreso.progressMax = tvConteoTotal.text.toString().toFloat()
+            }
+        }else{
+            Toast.makeText(this.requireContext(), "Ingresa una meta",
+                Toast.LENGTH_SHORT).show()
         }
     }
 
