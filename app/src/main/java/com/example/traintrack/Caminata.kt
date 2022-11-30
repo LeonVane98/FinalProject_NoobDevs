@@ -18,6 +18,7 @@ import com.example.traintrack.databinding.FragmentCaminataBinding
 import com.example.traintrack.servicio.MiServicio
 import com.example.traintrack.util.Constante
 import kotlinx.android.synthetic.main.fragment_caminata.*
+import kotlin.math.round
 
 
 class Caminata : Fragment(), SensorEventListener {
@@ -78,6 +79,7 @@ class Caminata : Fragment(), SensorEventListener {
         fBinding.tvConteoPasos.setOnClickListener{
             pasosPrevios = pasosTotales
             fBinding.tvConteoPasos.text = "0"
+            fBinding.tvDistancia.text = "0"
             fBinding.barraDeProgreso.apply {
                 setProgressWithAnimation(0f)
             }
@@ -87,8 +89,14 @@ class Caminata : Fragment(), SensorEventListener {
     }
 
     private fun setMeta(){
-        fBinding.btnMeta.setOnClickListener {
-            fBinding.barraDeProgreso.progressMax = tvConteoTotal.text.toString().toFloat()
+
+        if(tvConteoTotal.text.isNotEmpty()){
+            fBinding.btnMeta.setOnClickListener {
+                fBinding.barraDeProgreso.progressMax = tvConteoTotal.text.toString().toFloat()
+            }
+        }else{
+            Toast.makeText(this.requireContext(), "Ingresa una meta",
+                Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -105,6 +113,7 @@ class Caminata : Fragment(), SensorEventListener {
             pasosTotales = event!!.values[0]
         val pasosActuales = pasosTotales.toInt() - pasosPrevios.toInt()
         fBinding.tvConteoPasos.text = ("$pasosActuales")
+        fBinding.tvDistancia.text = "${round(pasosActuales*0.762)} m"
 
         fBinding.barraDeProgreso.apply {
             setProgressWithAnimation(pasosActuales.toFloat())
