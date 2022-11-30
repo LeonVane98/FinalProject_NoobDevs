@@ -50,7 +50,11 @@
         android:id="@+id/estCadera2"
         android:name="com.example.traintrack.EstCadera2"
         android:label="fragment_est_cadera2"
-        tools:layout="@layout/fragment_est_cadera2" />
+        tools:layout="@layout/fragment_est_cadera2" >
+        <action
+            android:id="@+id/action_estCadera2_to_ejercicios"
+            app:destination="@id/ejercicios" />
+    </fragment>
     <fragment
         android:id="@+id/estBicep1"
         android:name="com.example.traintrack.EstBicep1"

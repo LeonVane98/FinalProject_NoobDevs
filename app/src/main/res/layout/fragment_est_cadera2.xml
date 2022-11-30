@@ -66,10 +66,10 @@
         app:layout_constraintTop_toBottomOf="@+id/img_Estiramiento2" />
 
     <Button
-        android:id="@+id/btn_estiramiento1"
+        android:id="@+id/btn_estiramiento2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hecho"
+        android:text="Finalizar"
         app:layout_constraintTop_toBottomOf="@id/txt_IndicacionEstiramiento2"
         app:layout_constraintLeft_toLeftOf="parent"
         android:backgroundTint="#2A25CC"
