@@ -8,6 +8,74 @@
     android:background="@drawable/estiramiento_cadera">
 
 
+    <TextView
+        android:id="@+id/tv_Estiramiento2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Estiramiento #2"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_Introduccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@color/cardview_light_background"
+        android:text="Este segundo estiramiento se debe realizar de pie."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/tv_Estiramiento2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/img_Estiramiento2"
+        android:layout_width="491dp"
+        android:layout_height="256dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_Introduccion"
+        app:srcCompat="@drawable/estiramiento_cadera_adulto2"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_IndicacionEstiramiento2"
+        android:layout_width="403dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="-70dp"
+        android:layout_marginRight="24dp"
+        android:background="@color/cardview_light_background"
+        android:text="Esta parte de estiramiento debe poner su brazo derecho en su cadera y su brazo izquierdo debe de estirar, Usted se inclinara de lado derecho luego de la misma forma lo hace al lado izquierdo ."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_Estiramiento2" />
+
+    <Button
+        android:id="@+id/btn_estiramiento1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hecho"
+        app:layout_constraintTop_toBottomOf="@id/txt_IndicacionEstiramiento2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:backgroundTint="#2A25CC"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"/>
+
 
 
 

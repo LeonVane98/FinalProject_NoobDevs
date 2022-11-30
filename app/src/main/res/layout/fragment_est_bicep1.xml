@@ -69,6 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hecho"
+        android:backgroundTint="#2A25CC"
         app:layout_constraintTop_toBottomOf="@id/txt_IndicacionBicep1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
