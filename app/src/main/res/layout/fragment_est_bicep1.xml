@@ -1,14 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EstBicep1">
+    android:background="@drawable/fondo_mancuerna">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/tv_Ejercicio1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Ejercicio #1"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+
+    <TextView
+        android:id="@+id/txt_Introduccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/cardview_light_background"
+        android:text="Este primer ejercicio nos ayuda a estirar brazos, pecho y los hombros."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_Ejercicio1" />
+
+    <ImageView
+        android:id="@+id/img_Ejercicio1"
+        android:layout_width="491dp"
+        android:layout_height="256dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/estiramiento_ejercicio1bicep"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Introduccion"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_IndicacionBicep1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-70dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@color/cardview_light_background"
+        android:text="De pie, con los pies separados a la altura de los hombros, entrelaza tus manos por detras a la altura de la rabadilla y mira al frente. Poco a poco levanta los brazos tan lejos como puedas de la zona baja de la espalda."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/img_Ejercicio1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <Button
+        android:id="@+id/btn_ejer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hecho"
+        app:layout_constraintTop_toBottomOf="@id/txt_IndicacionBicep1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -73,7 +73,11 @@
         android:id="@+id/estBicep3"
         android:name="com.example.traintrack.EstBicep3"
         android:label="fragment_est_bicep3"
-        tools:layout="@layout/fragment_est_bicep3" />
+        tools:layout="@layout/fragment_est_bicep3" >
+        <action
+            android:id="@+id/action_estBicep3_to_ejercicios"
+            app:destination="@id/ejercicios" />
+    </fragment>
     <fragment
         android:id="@+id/estCuello1"
         android:name="com.example.traintrack.EstCuello1"
@@ -87,5 +91,9 @@
         android:id="@+id/estCuello2"
         android:name="com.example.traintrack.EstCuello2"
         android:label="fragment_est_cuello2"
-        tools:layout="@layout/fragment_est_cuello2" />
+        tools:layout="@layout/fragment_est_cuello2" >
+        <action
+            android:id="@+id/action_estCuello2_to_ejercicios"
+            app:destination="@id/ejercicios" />
+    </fragment>
 </navigation>

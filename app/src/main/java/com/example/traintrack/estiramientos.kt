@@ -30,7 +30,7 @@ class estiramientos : Fragment() {
 
     private fun navEst(){
         fbinding.btnEstiramientoCadera.setOnClickListener{
-            Navigation.findNavController(fbinding.root).navigate(R.id.action_estiramientos_to_estBicep1)
+            Navigation.findNavController(fbinding.root).navigate(R.id.action_estiramientos_to_estCadera1)
         }
 
         fbinding.btnEstiramientoCuello.setOnClickListener{
